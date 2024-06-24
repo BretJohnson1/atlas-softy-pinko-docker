@@ -1,1 +1,1 @@
-# atlas-softy-pinko-docker
+In this project I will be learning how to create and manipulate a docker
