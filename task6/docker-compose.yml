@@ -14,16 +14,16 @@ services:
     image: softy-pinko-front-end:task6
     ports:
       - "9000:9000"
-  depends-on: back-end
+    depends-on: back-end
   proxy:
-  build:
+    build:
 
-    context: ./proxy
-    dockerfile: Dockerfile
+      context: ./proxy
+      dockerfile: Dockerfile
 
-  image: softy-pinko-proxy:task6
+    image: softy-pinko-proxy:task6
 
-  ports: "80:80"
+    ports: "80:80"
 
-  depends on: back-end
+    depends on: back-end
               front-end
